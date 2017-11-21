@@ -6,4 +6,4 @@
       file: path=/tmp/testfile state=touch
 
     - name: Adding some content to /tmp/testfile
-      lineinfile: path=/tmp/testfile line="This is a test line" state=present 
+      lineinfile: path=/tmp/testfile line="This is a test line update" state=present 
