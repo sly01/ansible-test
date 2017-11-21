@@ -1,0 +1,9 @@
+--- 
+- hosts: all
+  become: yes
+  tasks:
+    - name: Creating a test file under /tmp
+      file: path=/tmp/testfile state=touch
+
+    - name: Adding some content to /tmp/testfile
+      fileinline: path=/tmp/testfile line="This is a test line" state=present 
